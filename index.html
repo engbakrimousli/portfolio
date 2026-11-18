@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مهندس معلوماتية | Portfolio</title>
+  <meta name="description" content="الموقع الشخصي لمهندس معلوماتية متخصص في الذكاء الصنعي، الشبكات، وتطوير البرمجيات.">
+  <meta name="theme-color" content="#06110C">
+
+  <!-- Apply saved theme/language before first paint to avoid a flash -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('pf_theme');
+        var l = localStorage.getItem('pf_lang');
+        if (t) document.documentElement.setAttribute('data-theme', t);
+        if (l) {
+          document.documentElement.lang = l;
+          document.documentElement.dir = l === 'ar' ? 'rtl' : 'ltr';
+        }
+      } catch (e) { /* storage unavailable */ }
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">تخطَّ إلى المحتوى</a>
+
+  <!-- Reading progress -->
+  <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <nav class="navbar__inner container" aria-label="Main">
+      <a href="#hero" class="brand" id="brand" aria-label="Home">
+        <span class="brand__mark" id="brandInitials">AN</span>
+        <span class="brand__name" id="brandName"></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" data-i18n="nav.about">نبذة</a></li>
+        <li><a href="#services" data-i18n="nav.services">الخدمات</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">المهارات</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">المشاريع</a></li>
+        <li><a href="#experience" data-i18n="nav.experience">المسيرة</a></li>
+        <li><a href="#courses" data-i18n="nav.courses">الدورات</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">تواصل</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="langToggle" type="button" aria-label="Switch language">
+          <span id="langLabel">EN</span>
+        </button>
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle theme">
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="icon-btn nav-burger" id="navBurger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Local draft notice (visible only when a localStorage draft is active) -->
+  <div class="draft-banner" id="draftBanner" hidden>
+    <span data-i18n="draft.notice">أنت تشاهد مسودة محلية غير منشورة.</span>
+    <button type="button" class="link-btn" id="draftOpenAdmin" data-i18n="draft.open">فتح لوحة التحكم</button>
+  </div>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="hero__glow" aria-hidden="true"></div>
+
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="hero__badge reveal" id="heroBadge">
+            <span class="pulse-dot"></span>
+            <span data-i18n="hero.available">متاح لفرص جديدة</span>
+          </p>
+          <p class="hero__hello reveal" data-i18n="hero.hello">مرحباً، أنا</p>
+          <h1 class="hero__name reveal" id="heroName"></h1>
+          <p class="hero__title reveal" id="heroTitle">
+            <span class="typed" id="heroRole" aria-hidden="true"></span><span class="type-cursor" aria-hidden="true"></span>
+            <span class="sr-only" id="heroRoleSr"></span>
+          </p>
+          <p class="hero__tagline reveal" id="heroTagline"></p>
+
+          <div class="hero__cta reveal">
+            <a class="btn btn--gold" id="cvBtn" href="#" download>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              <span data-i18n="hero.cv">تحميل السيرة الذاتية</span>
+            </a>
+            <a class="btn btn--ghost" href="#contact">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+              <span data-i18n="hero.contact">تواصل معي</span>
+            </a>
+            <a class="btn btn--ghost" id="heroGithub" href="#" target="_blank" rel="noopener noreferrer" hidden>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.480a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.420 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.130V22"/></svg>
+              <span>GitHub</span>
+            </a>
+          </div>
+
+          <ul class="hero__socials reveal" id="heroSocials" aria-label="Social links"></ul>
+        </div>
+
+        <div class="hero__visual reveal" aria-hidden="true">
+          <div class="avatar-ring">
+            <div class="avatar" id="heroAvatar"></div>
+            <span class="orbit orbit--1"><span></span></span>
+            <span class="orbit orbit--2"><span></span></span>
+          </div>
+          <div class="code-chip code-chip--1">&lt;AI /&gt;</div>
+          <div class="code-chip code-chip--2">192.168.0.1</div>
+          <div class="code-chip code-chip--3">{ dev }</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <ul class="stats" id="statsGrid"></ul>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ============ TECH TICKER (generated from skills) ============ -->
+    <div class="ticker" id="ticker" aria-label="Tech stack">
+      <div class="ticker__track" id="tickerTrack"></div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__eyebrow" data-i18n="about.eyebrow">من أنا</span>
+          <h2 class="section__title" data-i18n="about.title">نبذة ومجالات الخبرة</h2>
+        </header>
+
+        <div class="bento" id="aboutBento">
+          <article class="card bento__about reveal tilt">
+            <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+            <h3 class="card__title" data-i18n="about.who">المهندس خلف الكود</h3>
+            <div class="about__text" id="aboutSummary"></div>
+            <ul class="about__meta">
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span id="aboutLocation"></span></li>
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg><a id="aboutEmail" href="#"></a></li>
+            </ul>
+          </article>
+          <!-- Expertise cards are injected here by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section section--alt" id="services">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__eyebrow" data-i18n="services.eyebrow">ماذا أقدّم</span>
+          <h2 class="section__title" data-i18n="services.title">الخدمات التي أقدمها</h2>
+        </header>
+        <div class="services-grid" id="servicesGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ WHY ME ============ -->
+    <section class="section" id="why">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__eyebrow" data-i18n="why.eyebrow">قيمة مضافة</span>
+          <h2 class="section__title" data-i18n="why.title">لماذا تختارني؟</h2>
+        </header>
+        <div class="why-grid" id="whyGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__eyebrow" data-i18n="skills.eyebrow">الأدوات والتقنيات</span>
+          <h2 class="section__title" data-i18n="skills.title">المهارات التقنية</h2>
+        </header>
+        <div class="skill-filters reveal" id="skillFilters"></div>
+        <div class="skills-grid" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__eyebrow" data-i18n="projects.eyebrow">أعمال مختارة</span>
+          <h2 class="section__title" data-i18n="projects.title">معرض المشاريع</h2>
+        </header>
+
+        <div class="filters reveal" id="projectFilters" role="tablist" aria-label="Project filters">
+          <button class="filter is-active" type="button" role="tab" aria-selected="true" data-filter="all" data-i18n="filter.all">الكل</button>
+          <button class="filter" type="button" role="tab" aria-selected="false" data-filter="ai" data-i18n="filter.ai">ذكاء صنعي / خلفية</button>
+          <button class="filter" type="button" role="tab" aria-selected="false" data-filter="networks" data-i18n="filter.networks">شبكات</button>
+          <button class="filter" type="button" role="tab" aria-selected="false" data-filter="web" data-i18n="filter.web">ويب</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid" aria-live="polite"></div>
+        <p class="empty-state" id="projectsEmpty" hidden data-i18n="projects.empty">لا توجد مشاريع في هذا التصنيف بعد.</p>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section section--alt" id="experience">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__eyebrow" data-i18n="exp.eyebrow">المسيرة</span>
+          <h2 class="section__title" data-i18n="exp.title">الخبرات والتعليم والشهادات</h2>
+        </header>
+
+        <div class="timeline-filters reveal" id="timelineFilters">
+          <button class="chip-btn is-active" type="button" data-type="all" data-i18n="filter.all">الكل</button>
+          <button class="chip-btn" type="button" data-type="work" data-i18n="tl.work">خبرة عملية</button>
+          <button class="chip-btn" type="button" data-type="education" data-i18n="tl.education">تعليم</button>
+          <button class="chip-btn" type="button" data-type="cert" data-i18n="tl.cert">شهادات</button>
+        </div>
+
+        <ol class="timeline" id="timeline"></ol>
+      </div>
+    </section>
+
+    <!-- ============ COURSES ============ -->
+    <section class="section" id="courses">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__eyebrow" data-i18n="courses.eyebrow">التعلّم المستمر</span>
+          <h2 class="section__title" data-i18n="courses.title">الدورات التدريبية والشهادات</h2>
+        </header>
+        <div class="courses-grid" id="coursesGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__eyebrow" data-i18n="contact.eyebrow">لنعمل معاً</span>
+          <h2 class="section__title" data-i18n="contact.title">تواصل معي</h2>
+        </header>
+
+        <div class="contact-grid">
+          <aside class="card contact-info reveal">
+            <h3 class="card__title" data-i18n="contact.lead">لديك مشروع أو فرصة؟</h3>
+            <p class="muted" data-i18n="contact.text">يسعدني مناقشة الأفكار الجديدة، الاستشارات التقنية، أو فرص التعاون.</p>
+            <p class="reply-time" id="replyTime"></p>
+            <ul class="contact-list">
+              <li>
+                <span class="contact-list__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg></span>
+                <div><small data-i18n="contact.email">البريد الإلكتروني</small><a id="contactEmail" href="#"></a></div>
+              </li>
+              <li>
+                <span class="contact-list__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+                <div><small data-i18n="contact.phone">الهاتف</small><a id="contactPhone" href="#" dir="ltr"></a></div>
+              </li>
+              <li id="contactWhatsappItem">
+                <span class="contact-list__icon contact-list__icon--wa"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span>
+                <div><small data-i18n="contact.whatsapp">واتساب مباشر</small><a id="contactWhatsapp" href="#" target="_blank" rel="noopener noreferrer" dir="ltr"></a></div>
+              </li>
+              <li>
+                <span class="contact-list__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+                <div><small data-i18n="contact.location">الموقع</small><span id="contactLocation"></span></div>
+              </li>
+            </ul>
+            <ul class="social-row" id="contactSocials" aria-label="Social links"></ul>
+          </aside>
+
+          <form class="card contact-form reveal" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="cfName" data-i18n="form.name">الاسم الكامل</label>
+                <input id="cfName" name="name" type="text" autocomplete="name" required minlength="2">
+                <span class="field__error" data-for="cfName"></span>
+              </div>
+              <div class="field">
+                <label for="cfEmail" data-i18n="form.email">البريد الإلكتروني</label>
+                <input id="cfEmail" name="email" type="email" autocomplete="email" required dir="ltr">
+                <span class="field__error" data-for="cfEmail"></span>
+              </div>
+            </div>
+            <div class="field">
+              <label for="cfSubject" data-i18n="form.subject">الموضوع</label>
+              <input id="cfSubject" name="subject" type="text" required minlength="3">
+              <span class="field__error" data-for="cfSubject"></span>
+            </div>
+            <div class="field">
+              <label for="cfMessage" data-i18n="form.message">رسالتك</label>
+              <textarea id="cfMessage" name="message" rows="5" required minlength="10"></textarea>
+              <span class="field__error" data-for="cfMessage"></span>
+            </div>
+            <!-- Honeypot field to deter bots -->
+            <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <button class="btn btn--gold btn--block" type="submit" id="cfSubmit">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4 20-7z"/><path d="M22 2 11 13"/></svg>
+              <span data-i18n="form.send">إرسال الرسالة</span>
+            </button>
+            <p class="form-status" id="cfStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>
+        © <span id="year"></span> <span id="footerName"></span> —
+        <span data-i18n="footer.rights">جميع الحقوق محفوظة.</span>
+      </p>
+      <!-- Discreet admin entry point (also: Ctrl + Shift + A) -->
+      <button type="button" class="footer__secret" id="secretAdmin" aria-label="Admin">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      </button>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp button -->
+  <a class="wa-fab" id="waFab" href="#" target="_blank" rel="noopener noreferrer" hidden>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/><path d="M9 9.5c0 2.5 2 5 5 5.5l1-1.2-1.6-.8-.7.7c-.9-.4-1.6-1.1-2-2l.7-.7-.8-1.6-1.2 1z"/></svg>
+    <span class="wa-fab__label" data-i18n="wa.fab">تواصل عبر واتساب</span>
+  </a>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+  <!-- ============ PROJECT MODAL ============ -->
+  <dialog class="modal" id="projectModal" aria-labelledby="pmTitle">
+    <div class="modal__box">
+      <button class="modal__close icon-btn" type="button" data-close aria-label="Close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="modal__media" id="pmMedia"></div>
+      <div class="modal__body">
+        <div class="modal__meta">
+          <span class="badge" id="pmCategory"></span>
+          <span class="muted" id="pmYear"></span>
+        </div>
+        <h3 class="modal__title" id="pmTitle"></h3>
+        <p class="modal__client" id="pmClient"></p>
+        <div class="modal__desc" id="pmDesc"></div>
+        <ul class="tags" id="pmTags"></ul>
+        <div class="modal__actions" id="pmActions"></div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ============ CERTIFICATE LIGHTBOX ============ -->
+  <dialog class="modal modal--lightbox" id="certModal" aria-labelledby="certTitle">
+    <div class="modal__box">
+      <button class="modal__close icon-btn" type="button" data-close aria-label="Close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <img id="certImage" src="" alt="">
+      <p class="lightbox__caption" id="certTitle"></p>
+    </div>
+  </dialog>
+
+  <!-- ============ PIN DIALOG ============ -->
+  <dialog class="modal modal--sm" id="pinModal" aria-labelledby="pinTitle">
+    <form class="modal__box pin-box" id="pinForm" method="dialog">
+      <div class="pin-box__icon">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      </div>
+      <h3 id="pinTitle" data-i18n="pin.title">لوحة التحكم</h3>
+      <p class="muted" data-i18n="pin.text">أدخل رمز الدخول للمتابعة</p>
+      <input class="pin-input" id="pinInput" type="password" autocomplete="off" maxlength="32" required aria-label="PIN">
+      <p class="pin-error" id="pinError" role="alert"></p>
+      <div class="pin-actions">
+        <button type="button" class="btn btn--ghost" data-close data-i18n="common.cancel">إلغاء</button>
+        <button type="submit" class="btn btn--gold" id="pinSubmit" data-i18n="pin.enter">دخول</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- ============ ADMIN DRAWER ============ -->
+  <dialog class="admin" id="adminPanel" aria-labelledby="adminTitle">
+    <div class="admin__shell">
+      <header class="admin__head">
+        <div>
+          <h2 id="adminTitle" data-i18n="admin.title">لوحة التحكم</h2>
+          <p class="admin__status" id="adminStatus"></p>
+        </div>
+        <div class="admin__head-actions">
+          <button type="button" class="btn btn--sm btn--ghost" id="adminLock" data-i18n="admin.lock">قفل</button>
+          <button type="button" class="icon-btn" data-close aria-label="Close">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+          </button>
+        </div>
+      </header>
+
+      <nav class="admin__tabs" id="adminTabs" role="tablist" aria-label="Admin sections"></nav>
+
+      <div class="admin__body" id="adminBody"></div>
+
+      <footer class="admin__foot">
+        <button type="button" class="btn btn--sm btn--ghost" id="adminExport">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          <span data-i18n="admin.export">تصدير JSON</span>
+        </button>
+        <label class="btn btn--sm btn--ghost">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg>
+          <span data-i18n="admin.import">استيراد</span>
+          <input type="file" id="adminImport" accept="application/json,.json" hidden>
+        </label>
+        <button type="button" class="btn btn--sm btn--danger" id="adminDiscard" data-i18n="admin.discard">تجاهل المسودة</button>
+        <button type="button" class="btn btn--sm btn--gold" id="adminPublish">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          <span data-i18n="admin.publish">نشر على GitHub</span>
+        </button>
+      </footer>
+    </div>
+  </dialog>
+
+  <!-- Toast notifications -->
+  <div class="toasts" id="toasts" aria-live="polite" aria-atomic="false"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

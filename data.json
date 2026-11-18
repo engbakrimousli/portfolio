@@ -1,0 +1,416 @@
+{
+  "meta": {
+    "version": 2,
+    "updatedAt": "2026-11-18T00:00:00.000Z"
+  },
+  "settings": {
+    "defaultLang": "ar",
+    "defaultTheme": "dark",
+    "adminPinHash": "db761f8e2ed364fe9c35da8e498e31121815544670a228024ba0171c653e66cb",
+    "formEndpoint": "",
+    "showTicker": true,
+    "showWhatsappFab": true,
+    "github": {
+      "owner": "",
+      "repo": "",
+      "branch": "main",
+      "path": "data.json"
+    }
+  },
+  "profile": {
+    "initials": "AN",
+    "name": { "ar": "م. أحمد النوري", "en": "Eng. Ahmad Al-Nouri" },
+    "title": { "ar": "مهندس معلوماتية | ذكاء صنعي وبنية تحتية للشبكات", "en": "Informatics Engineer | AI & Network Infrastructure" },
+    "roles": {
+      "ar": "مهندس معلوماتية\nمهندس برمجيات\nمطوّر مواقع ويب\nمطوّر أنظمة\nمهندس شبكات\nمهندس ذكاء صنعي",
+      "en": "Informatics Engineer\nSoftware Engineer\nWeb Developer\nSystems Developer\nNetwork Engineer\nAI Engineer"
+    },
+    "tagline": {
+      "ar": "أصمّم أنظمة ذكية وبنى تحتية موثوقة تربط بين البيانات والشبكات والبرمجيات، وأحوّل الأفكار المعقدة إلى حلول هندسية قابلة للتوسع.",
+      "en": "I design intelligent systems and reliable infrastructure that connect data, networks and software — turning complex ideas into scalable engineering solutions."
+    },
+    "location": { "ar": "دمشق، سوريا", "en": "Damascus, Syria" },
+    "email": "hello@example.com",
+    "phone": "+963 900 000 000",
+    "whatsapp": "963900000000",
+    "whatsappMessage": { "ar": "مرحباً، تواصلت معك من خلال موقعك الشخصي.", "en": "Hello, I found you through your portfolio website." },
+    "replyTime": { "ar": "متوسط وقت الرد: خلال 24 ساعة", "en": "Average reply time: within 24 hours" },
+    "avatar": "",
+    "cvUrl": "cv.pdf",
+    "available": true
+  },
+  "stats": [
+    { "id": "st1", "value": 6, "suffix": "+", "label": { "ar": "سنوات خبرة", "en": "Years of Experience" } },
+    { "id": "st2", "value": 40, "suffix": "+", "label": { "ar": "مشروع منجز", "en": "Projects Delivered" } },
+    { "id": "st3", "value": 25, "suffix": "+", "label": { "ar": "تقنية متقنة", "en": "Technologies Mastered" } },
+    { "id": "st4", "value": 12, "suffix": "+", "label": { "ar": "شهادة ودورة", "en": "Certificates & Courses" } }
+  ],
+  "about": {
+    "summary": {
+      "ar": "مهندس معلوماتية متخصص في هندسة البرمجيات والذكاء الصنعي، حاصل على إجازة في الهندسة المعلوماتية. أعمل عند تقاطع ثلاثة عوالم: نماذج تعلّم الآلة التي تستخلص القيمة من البيانات، والبنية التحتية للشبكات والخوادم التي تضمن الاعتمادية، والبرمجيات النظيفة التي تجعل كل ذلك سهل الاستخدام.\nأؤمن بأن الهندسة الجيدة تبدأ بفهم المشكلة لا بالأداة، لذلك أركّز على التصميم المعماري المدروس والأتمتة والتوثيق وقابلية الصيانة على المدى الطويل.",
+      "en": "An Informatics Engineer specialised in software engineering and artificial intelligence, holding a degree in Informatics Engineering. I work at the intersection of three worlds: machine-learning models that extract value from data, network and server infrastructure that guarantees reliability, and clean software that makes it all usable.\nI believe good engineering starts with understanding the problem, not the tool — so I focus on deliberate architecture, automation, documentation and long-term maintainability."
+    },
+    "expertise": [
+      {
+        "id": "ex1",
+        "icon": "brain",
+        "title": { "ar": "الذكاء الصنعي وتعلّم الآلة", "en": "AI & Machine Learning" },
+        "description": { "ar": "بناء نماذج الرؤية الحاسوبية ومعالجة اللغة العربية، وتدريبها ونشرها كخدمات إنتاجية.", "en": "Building computer-vision and Arabic NLP models, training them and deploying them as production services." }
+      },
+      {
+        "id": "ex2",
+        "icon": "server",
+        "title": { "ar": "إدارة الخوادم والشبكات", "en": "Servers & Networks" },
+        "description": { "ar": "تصميم الشبكات المؤسساتية، إدارة خوادم Linux، والأتمتة والمراقبة على مدار الساعة.", "en": "Enterprise network design, Linux server administration, automation and 24/7 monitoring." }
+      },
+      {
+        "id": "ex3",
+        "icon": "code",
+        "title": { "ar": "تطوير البرمجيات", "en": "Software Development" },
+        "description": { "ar": "واجهات برمجية RESTful وتطبيقات ويب حديثة بمعمارية نظيفة واختبارات شاملة.", "en": "RESTful APIs and modern web applications with clean architecture and thorough testing." }
+      },
+      {
+        "id": "ex4",
+        "icon": "shield",
+        "title": { "ar": "أمن المعلومات", "en": "Information Security" },
+        "description": { "ar": "تقوية الأنظمة، جدران الحماية، وتطبيق أفضل ممارسات الأمن السيبراني.", "en": "System hardening, firewalls and applying cyber-security best practices." }
+      }
+    ]
+  },
+  "services": [
+    {
+      "id": "sv1",
+      "icon": "brain",
+      "title": { "ar": "حلول الذكاء الصنعي", "en": "AI Solutions" },
+      "description": { "ar": "بناء نماذج تعلّم آلة مخصصة، أنظمة رؤية حاسوبية، وروبوتات محادثة ذكية تعتمد على النماذج اللغوية.", "en": "Custom machine-learning models, computer-vision systems and LLM-powered chatbots." }
+    },
+    {
+      "id": "sv2",
+      "icon": "network",
+      "title": { "ar": "تصميم وتنفيذ الشبكات", "en": "Network Design & Deployment" },
+      "description": { "ar": "تصميم شبكات الشركات والمؤسسات، تقسيم VLAN، الشبكات اللاسلكية، والربط بين الفروع عبر VPN.", "en": "Enterprise network design, VLAN segmentation, wireless networks and site-to-site VPN." }
+    },
+    {
+      "id": "sv3",
+      "icon": "server",
+      "title": { "ar": "إدارة الخوادم و DevOps", "en": "Server Administration & DevOps" },
+      "description": { "ar": "إعداد خوادم Linux، الحاويات Docker، خطوط CI/CD، والنشر السحابي مع المراقبة المستمرة.", "en": "Linux servers, Docker containers, CI/CD pipelines and cloud deployment with continuous monitoring." }
+    },
+    {
+      "id": "sv4",
+      "icon": "layout",
+      "title": { "ar": "تطوير مواقع وتطبيقات الويب", "en": "Web Development" },
+      "description": { "ar": "مواقع وأنظمة ويب سريعة ومتجاوبة بواجهات حديثة ولوحات تحكم متكاملة.", "en": "Fast, responsive websites and web systems with modern UIs and full dashboards." }
+    },
+    {
+      "id": "sv5",
+      "icon": "database",
+      "title": { "ar": "تصميم قواعد البيانات", "en": "Database Design" },
+      "description": { "ar": "نمذجة البيانات وتصميم قواعد بيانات علائقية محسّنة الأداء مع النسخ الاحتياطي والأمان.", "en": "Data modelling and high-performance relational databases with backups and security." }
+    },
+    {
+      "id": "sv6",
+      "icon": "shield",
+      "title": { "ar": "أمن المعلومات", "en": "Information Security" },
+      "description": { "ar": "تدقيق أمني، تقوية الأنظمة، إعداد جدران الحماية، وأنظمة كشف التسلل.", "en": "Security audits, system hardening, firewall configuration and intrusion detection." }
+    },
+    {
+      "id": "sv7",
+      "icon": "graduation",
+      "title": { "ar": "استشارات ودروس تقنية", "en": "Consulting & Tutoring" },
+      "description": { "ar": "جلسات استشارية ودروس خصوصية أونلاين في البرمجة، الشبكات، والذكاء الصنعي.", "en": "Online consulting sessions and private lessons in programming, networking and AI." }
+    },
+    {
+      "id": "sv8",
+      "icon": "wrench",
+      "title": { "ar": "صيانة وتطوير الأنظمة", "en": "System Maintenance" },
+      "description": { "ar": "تحديث الأنظمة القائمة، إصلاح الأعطال، وتحسين الأداء مع دعم فني مستمر.", "en": "Upgrading existing systems, fixing issues and improving performance with ongoing support." }
+    }
+  ],
+  "whyMe": [
+    { "id": "wm1", "icon": "briefcase", "title": { "ar": "خبرة مؤسساتية حقيقية", "en": "Real Enterprise Experience" }, "description": { "ar": "عملت على أنظمة تخدم آلاف المستخدمين يومياً في بيئات إنتاج حقيقية.", "en": "I have built systems serving thousands of users daily in real production environments." } },
+    { "id": "wm2", "icon": "layers", "title": { "ar": "رؤية شاملة متكاملة", "en": "Full-Stack Vision" }, "description": { "ar": "أجمع بين البرمجيات والشبكات والذكاء الصنعي لتقديم حل متكامل من طرف واحد.", "en": "I combine software, networks and AI to deliver one complete, end-to-end solution." } },
+    { "id": "wm3", "icon": "code", "title": { "ar": "كود نظيف وموثّق", "en": "Clean, Documented Code" }, "description": { "ar": "معمارية واضحة، اختبارات، وتوثيق يسهّل الصيانة والتطوير مستقبلاً.", "en": "Clear architecture, tests and documentation that make future maintenance easy." } },
+    { "id": "wm4", "icon": "clock", "title": { "ar": "تسليم في الوقت", "en": "On-Time Delivery" }, "description": { "ar": "خطة عمل واضحة بمراحل محددة وتقارير تقدّم دورية.", "en": "A clear plan with defined milestones and regular progress updates." } },
+    { "id": "wm5", "icon": "shield", "title": { "ar": "أمان أولاً", "en": "Security First" }, "description": { "ar": "أطبّق أفضل ممارسات الأمان منذ اليوم الأول وليس كإضافة لاحقة.", "en": "Security best practices are applied from day one, not bolted on later." } },
+    { "id": "wm6", "icon": "headset", "title": { "ar": "دعم فني مستمر", "en": "Ongoing Support" }, "description": { "ar": "متابعة ودعم بعد التسليم لضمان استقرار النظام ونجاحه.", "en": "Follow-up and support after delivery to keep your system stable and successful." } }
+  ],
+  "skillGroups": [
+    { "id": "ai", "icon": "brain", "title": { "ar": "الذكاء الصنعي والبيانات", "en": "AI & Data" } },
+    { "id": "backend", "icon": "database", "title": { "ar": "الأنظمة الخلفية وقواعد البيانات", "en": "Backend & Databases" } },
+    { "id": "devops", "icon": "server", "title": { "ar": "DevOps والخوادم", "en": "DevOps & Servers" } },
+    { "id": "networks", "icon": "network", "title": { "ar": "الشبكات والأمن", "en": "Networks & Security" } },
+    { "id": "web", "icon": "layout", "title": { "ar": "تطوير الويب", "en": "Web Development" } },
+    { "id": "tools", "icon": "terminal", "title": { "ar": "الأدوات وبيئات العمل", "en": "Tools & Workflow" } }
+  ],
+  "skills": [
+    { "id": "sk1", "group": "ai", "name": "Python", "icon": "python", "level": 95 },
+    { "id": "sk2", "group": "ai", "name": "PyTorch", "icon": "pytorch", "level": 85 },
+    { "id": "sk3", "group": "ai", "name": "TensorFlow", "icon": "tensorflow", "level": 80 },
+    { "id": "sk4", "group": "ai", "name": "OpenCV", "icon": "opencv", "level": 82 },
+    { "id": "sk5", "group": "ai", "name": "Hugging Face", "icon": "huggingface", "level": 80 },
+    { "id": "sk6", "group": "ai", "name": "Pandas & NumPy", "icon": "pandas", "level": 88 },
+    { "id": "sk7", "group": "backend", "name": "FastAPI", "icon": "fastapi", "level": 90 },
+    { "id": "sk8", "group": "backend", "name": "Django", "icon": "django", "level": 85 },
+    { "id": "sk9", "group": "backend", "name": "Node.js", "icon": "nodedotjs", "level": 78 },
+    { "id": "sk10", "group": "backend", "name": "PostgreSQL", "icon": "postgresql", "level": 88 },
+    { "id": "sk11", "group": "backend", "name": "MySQL", "icon": "mysql", "level": 85 },
+    { "id": "sk12", "group": "backend", "name": "Redis", "icon": "redis", "level": 78 },
+    { "id": "sk13", "group": "devops", "name": "Linux", "icon": "linux", "level": 92 },
+    { "id": "sk14", "group": "devops", "name": "Docker", "icon": "docker", "level": 90 },
+    { "id": "sk15", "group": "devops", "name": "Kubernetes", "icon": "kubernetes", "level": 70 },
+    { "id": "sk16", "group": "devops", "name": "Ansible", "icon": "ansible", "level": 80 },
+    { "id": "sk17", "group": "devops", "name": "Nginx", "icon": "nginx", "level": 84 },
+    { "id": "sk18", "group": "devops", "name": "Prometheus & Grafana", "icon": "grafana", "level": 83 },
+    { "id": "sk19", "group": "networks", "name": "Cisco (CCNA)", "icon": "cisco", "level": 87 },
+    { "id": "sk20", "group": "networks", "name": "MikroTik", "icon": "mikrotik", "level": 82 },
+    { "id": "sk21", "group": "networks", "name": "Fortinet Firewalls", "icon": "fortinet", "level": 76 },
+    { "id": "sk22", "group": "networks", "name": "Wireshark", "icon": "wireshark", "level": 80 },
+    { "id": "sk23", "group": "web", "name": "JavaScript", "icon": "javascript", "level": 88 },
+    { "id": "sk24", "group": "web", "name": "TypeScript", "icon": "typescript", "level": 80 },
+    { "id": "sk25", "group": "web", "name": "React", "icon": "react", "level": 82 },
+    { "id": "sk26", "group": "web", "name": "Vue.js", "icon": "vuedotjs", "level": 75 },
+    { "id": "sk27", "group": "web", "name": "HTML5", "icon": "html5", "level": 95 },
+    { "id": "sk28", "group": "web", "name": "CSS3", "icon": "css3", "level": 92 },
+    { "id": "sk29", "group": "tools", "name": "Git", "icon": "git", "level": 90 },
+    { "id": "sk30", "group": "tools", "name": "GitHub Actions", "icon": "githubactions", "level": 82 },
+    { "id": "sk31", "group": "tools", "name": "Bash Scripting", "icon": "gnubash", "level": 85 },
+    { "id": "sk32", "group": "tools", "name": "Figma", "icon": "figma", "level": 70 }
+  ],
+  "projects": [
+    {
+      "id": "pr1",
+      "category": "ai",
+      "year": "2026",
+      "featured": true,
+      "icon": "brain",
+      "image": "",
+      "client": { "ar": "مؤسسة أرشفة حكومية", "en": "Government Archiving Agency" },
+      "title": { "ar": "منصة التعرّف على الخط العربي", "en": "Arabic Handwriting Recognition Platform" },
+      "summary": { "ar": "نظام OCR بالتعلّم العميق لرقمنة الوثائق العربية المكتوبة بخط اليد بدقة 94%.", "en": "Deep-learning OCR system that digitises handwritten Arabic documents with 94% accuracy." },
+      "description": {
+        "ar": "منصة متكاملة لرقمنة الأرشيف الورقي تعتمد على نموذج CNN-Transformer مدرّب على أكثر من 120 ألف عيّنة من الخط العربي. تتضمن واجهة برمجية لمعالجة الدفعات، ولوحة مراجعة بشرية، وتصدير النتائج بصيغ قابلة للبحث.\nخفّض النظام زمن الأرشفة اليدوية بنسبة 70% في المؤسسة المستفيدة.",
+        "en": "An end-to-end platform for digitising paper archives built on a CNN-Transformer model trained on 120k+ Arabic handwriting samples. It includes a batch-processing API, a human-review dashboard and searchable exports.\nThe system cut manual archiving time by 70% at the client organisation."
+      },
+      "tags": ["PyTorch", "FastAPI", "OpenCV", "Docker"],
+      "github": "https://github.com/",
+      "demo": ""
+    },
+    {
+      "id": "pr2",
+      "category": "networks",
+      "year": "2025",
+      "featured": true,
+      "icon": "network",
+      "image": "",
+      "client": { "ar": "جامعة خاصة", "en": "Private University" },
+      "title": { "ar": "إعادة هيكلة شبكة حرم جامعي", "en": "University Campus Network Redesign" },
+      "summary": { "ar": "تصميم وتنفيذ شبكة هرمية لأكثر من 3000 مستخدم مع تقسيم VLAN وتكرار كامل.", "en": "Designed and deployed a hierarchical network for 3,000+ users with VLAN segmentation and full redundancy." },
+      "description": {
+        "ar": "مشروع شامل لإعادة تصميم البنية الشبكية لحرم جامعي متعدد المباني باستخدام نموذج Core/Distribution/Access، مع بروتوكولات OSPF وHSRP، وتقسيم الشبكة إلى VLANs حسب الكليات، وإضافة مراقبة مركزية عبر Zabbix.\nارتفعت جاهزية الشبكة إلى 99.9% وانخفضت أعطال الاتصال بنسبة 85%.",
+        "en": "A comprehensive redesign of a multi-building campus network using the Core/Distribution/Access model, with OSPF and HSRP, per-faculty VLAN segmentation and centralised monitoring through Zabbix.\nNetwork availability rose to 99.9% and connectivity incidents dropped by 85%."
+      },
+      "tags": ["Cisco", "OSPF", "VLAN", "Zabbix"],
+      "github": "",
+      "demo": ""
+    },
+    {
+      "id": "pr3",
+      "category": "web",
+      "year": "2025",
+      "featured": false,
+      "icon": "layout",
+      "image": "",
+      "client": { "ar": "مجموعة عيادات طبية", "en": "Medical Clinics Group" },
+      "title": { "ar": "نظام إدارة العيادات الذكي", "en": "Smart Clinic Management System" },
+      "summary": { "ar": "تطبيق ويب لإدارة المواعيد والسجلات الطبية مع إشعارات فورية وتقارير تحليلية.", "en": "Web app for appointments and medical records with real-time notifications and analytics reports." },
+      "description": {
+        "ar": "تطبيق ويب متجاوب يخدم عيادات متعددة الفروع: حجز المواعيد عبر الإنترنت، سجلات المرضى المشفّرة، صلاحيات حسب الدور، وإشعارات عبر SMS وواتساب.\nبُني بمعمارية نظيفة مع تغطية اختبارات تتجاوز 85%.",
+        "en": "A responsive web application for multi-branch clinics: online booking, encrypted patient records, role-based permissions and SMS/WhatsApp notifications.\nBuilt with clean architecture and over 85% test coverage."
+      },
+      "tags": ["React", "Django", "PostgreSQL", "WebSockets"],
+      "github": "https://github.com/",
+      "demo": "https://example.com/"
+    },
+    {
+      "id": "pr4",
+      "category": "ai",
+      "year": "2024",
+      "featured": false,
+      "icon": "chart",
+      "image": "",
+      "client": { "ar": "شركة اتصالات", "en": "Telecom Company" },
+      "title": { "ar": "محلّل المشاعر للنصوص العربية", "en": "Arabic Sentiment Analyzer" },
+      "summary": { "ar": "نموذج BERT مخصّص لتحليل آراء العملاء باللهجات العربية مع لوحة مؤشرات تفاعلية.", "en": "Fine-tuned BERT model analysing customer opinions across Arabic dialects with an interactive dashboard." },
+      "description": {
+        "ar": "نموذج لغوي مضبوط على بيانات اللهجات الشامية والخليجية والمصرية، يصنّف آراء العملاء من وسائل التواصل الاجتماعي ويعرض الاتجاهات في لوحة مؤشرات لحظية.",
+        "en": "A language model fine-tuned on Levantine, Gulf and Egyptian dialect data that classifies customer opinions from social media and surfaces trends on a live dashboard."
+      },
+      "tags": ["Transformers", "HuggingFace", "Streamlit"],
+      "github": "https://github.com/",
+      "demo": ""
+    },
+    {
+      "id": "pr5",
+      "category": "networks",
+      "year": "2024",
+      "featured": false,
+      "icon": "shield",
+      "image": "",
+      "client": { "ar": "مزوّد خدمات إنترنت", "en": "Internet Service Provider" },
+      "title": { "ar": "منظومة مراقبة وأمن الخوادم", "en": "Server Monitoring & Security Stack" },
+      "summary": { "ar": "حل مراقبة مركزي مع تنبيهات ذكية وكشف التسلل لعشرات الخوادم.", "en": "Centralised monitoring with smart alerting and intrusion detection for dozens of servers." },
+      "description": {
+        "ar": "منظومة مبنية على Prometheus وGrafana وWazuh لمراقبة أكثر من 60 خادماً، مع أتمتة النشر عبر Ansible وتنبيهات فورية عبر Telegram.",
+        "en": "A stack built on Prometheus, Grafana and Wazuh monitoring 60+ servers, with Ansible-automated provisioning and instant Telegram alerts."
+      },
+      "tags": ["Prometheus", "Grafana", "Ansible", "Wazuh"],
+      "github": "https://github.com/",
+      "demo": ""
+    },
+    {
+      "id": "pr6",
+      "category": "web",
+      "year": "2023",
+      "featured": false,
+      "icon": "cloud",
+      "image": "",
+      "client": { "ar": "مشروع تحول رقمي", "en": "Digital Transformation Initiative" },
+      "title": { "ar": "بوابة خدمات إلكترونية", "en": "E-Services Gateway" },
+      "summary": { "ar": "بوابة موحّدة للخدمات الإلكترونية مع تسجيل دخول موحّد وواجهات برمجية آمنة.", "en": "Unified e-services portal with single sign-on and secure APIs." },
+      "description": {
+        "ar": "بوابة تجمع عدة خدمات إلكترونية تحت واجهة واحدة، مع تسجيل دخول موحّد OAuth2، وبوابة API، وتخزين مؤقت لتحسين الأداء.",
+        "en": "A portal bringing several e-services under one interface, with OAuth2 single sign-on, an API gateway and caching for performance."
+      },
+      "tags": ["Node.js", "OAuth2", "Redis", "Nginx"],
+      "github": "",
+      "demo": "https://example.com/"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "tl1",
+      "type": "work",
+      "period": { "ar": "2023 — الآن", "en": "2023 — Present" },
+      "title": { "ar": "مهندس ذكاء صنعي أول", "en": "Senior AI Engineer" },
+      "org": { "ar": "شركة تقنية ناشئة — دمشق", "en": "Tech Startup — Damascus" },
+      "description": { "ar": "قيادة فريق من 4 مهندسين لبناء حلول رؤية حاسوبية ومعالجة لغة عربية ونشرها على بنية سحابية.", "en": "Leading a team of 4 engineers building computer-vision and Arabic NLP solutions deployed on cloud infrastructure." },
+      "tags": ["MLOps", "Leadership", "PyTorch"]
+    },
+    {
+      "id": "tl2",
+      "type": "work",
+      "period": { "ar": "2020 — 2023", "en": "2020 — 2023" },
+      "title": { "ar": "مهندس شبكات وأنظمة", "en": "Network & Systems Engineer" },
+      "org": { "ar": "مزوّد خدمات إنترنت", "en": "Internet Service Provider" },
+      "description": { "ar": "إدارة البنية التحتية لشبكة تخدم آلاف المشتركين، وأتمتة العمليات وتحسين الجاهزية.", "en": "Managed network infrastructure serving thousands of subscribers, automated operations and improved availability." },
+      "tags": ["Cisco", "Linux", "Ansible"]
+    },
+    {
+      "id": "tl3",
+      "type": "work",
+      "period": { "ar": "مستقل", "en": "Freelance" },
+      "title": { "ar": "مطوّر ومستشار تقني مستقل", "en": "Freelance Developer & Consultant" },
+      "org": { "ar": "عملاء محليون ودوليون", "en": "Local & International Clients" },
+      "description": { "ar": "تطوير مواقع وأنظمة ويب، إعداد خوادم وشبكات للشركات الصغيرة، ودروس تقنية أونلاين.", "en": "Building websites and web systems, setting up servers and networks for small businesses, and online tutoring." },
+      "tags": ["Web", "DevOps", "Consulting"]
+    },
+    {
+      "id": "tl4",
+      "type": "education",
+      "period": { "ar": "2015 — 2020", "en": "2015 — 2020" },
+      "title": { "ar": "إجازة في الهندسة المعلوماتية", "en": "B.Sc. in Informatics Engineering" },
+      "org": { "ar": "جامعة دمشق", "en": "Damascus University" },
+      "description": { "ar": "اختصاص الذكاء الصنعي — مشروع التخرج: نظام تعرّف على لغة الإشارة بتقدير امتياز.", "en": "Artificial Intelligence major — graduation project: a sign-language recognition system, graded Excellent." },
+      "tags": ["AI", "Algorithms"]
+    }
+  ],
+  "courses": [
+    {
+      "id": "co1",
+      "icon": "cisco",
+      "title": { "ar": "شهادة CCNA", "en": "CCNA Certification" },
+      "subtitle": { "ar": "التوجيه والتبديل وأمن الشبكات", "en": "Routing, switching & network security" },
+      "provider": { "ar": "Cisco Networking Academy", "en": "Cisco Networking Academy" },
+      "date": "2022",
+      "hours": "70",
+      "certificateUrl": ""
+    },
+    {
+      "id": "co2",
+      "icon": "tensorflow",
+      "title": { "ar": "TensorFlow Developer", "en": "TensorFlow Developer Certificate" },
+      "subtitle": { "ar": "التعلّم العميق للرؤية الحاسوبية ومعالجة اللغات", "en": "Deep learning for vision and language" },
+      "provider": { "ar": "Google", "en": "Google" },
+      "date": "2023",
+      "hours": "60",
+      "certificateUrl": ""
+    },
+    {
+      "id": "co3",
+      "icon": "brain",
+      "title": { "ar": "تخصص تعلّم الآلة", "en": "Machine Learning Specialization" },
+      "subtitle": { "ar": "التعلّم الموجّه وغير الموجّه وأنظمة التوصية", "en": "Supervised, unsupervised learning & recommenders" },
+      "provider": { "ar": "Coursera — DeepLearning.AI", "en": "Coursera — DeepLearning.AI" },
+      "date": "2022",
+      "hours": "90",
+      "certificateUrl": ""
+    },
+    {
+      "id": "co4",
+      "icon": "linux",
+      "title": { "ar": "إدارة أنظمة Linux", "en": "Linux System Administration" },
+      "subtitle": { "ar": "إدارة الخوادم، الصلاحيات، والخدمات", "en": "Servers, permissions and services" },
+      "provider": { "ar": "Linux Foundation", "en": "Linux Foundation" },
+      "date": "2021",
+      "hours": "40",
+      "certificateUrl": ""
+    },
+    {
+      "id": "co5",
+      "icon": "docker",
+      "title": { "ar": "Docker و Kubernetes", "en": "Docker & Kubernetes" },
+      "subtitle": { "ar": "الحاويات وتنسيقها في بيئات الإنتاج", "en": "Containers and orchestration in production" },
+      "provider": { "ar": "Udemy", "en": "Udemy" },
+      "date": "2023",
+      "hours": "25",
+      "certificateUrl": ""
+    },
+    {
+      "id": "co6",
+      "icon": "shield",
+      "title": { "ar": "أساسيات الأمن السيبراني", "en": "Cybersecurity Fundamentals" },
+      "subtitle": { "ar": "التهديدات، الحماية، والاستجابة للحوادث", "en": "Threats, protection and incident response" },
+      "provider": { "ar": "IBM", "en": "IBM" },
+      "date": "2024",
+      "hours": "30",
+      "certificateUrl": ""
+    },
+    {
+      "id": "co7",
+      "icon": "python",
+      "title": { "ar": "Python للبيانات", "en": "Python for Data Science" },
+      "subtitle": { "ar": "Pandas و NumPy وتصوّر البيانات", "en": "Pandas, NumPy and data visualisation" },
+      "provider": { "ar": "freeCodeCamp", "en": "freeCodeCamp" },
+      "date": "2021",
+      "hours": "300",
+      "certificateUrl": ""
+    },
+    {
+      "id": "co8",
+      "icon": "award",
+      "title": { "ar": "مهارات التواصل والقيادة", "en": "Communication & Leadership Skills" },
+      "subtitle": { "ar": "إدارة الفرق والعروض التقديمية", "en": "Team management and presentations" },
+      "provider": { "ar": "منظمة تدريبية محلية", "en": "Local Training Organisation" },
+      "date": "2020",
+      "hours": "20",
+      "certificateUrl": ""
+    }
+  ],
+  "socials": [
+    { "id": "so1", "platform": "github", "label": "GitHub", "url": "https://github.com/" },
+    { "id": "so2", "platform": "linkedin", "label": "LinkedIn", "url": "https://www.linkedin.com/" },
+    { "id": "so3", "platform": "whatsapp", "label": "WhatsApp", "url": "https://wa.me/963900000000" },
+    { "id": "so4", "platform": "mail", "label": "Email", "url": "mailto:hello@example.com" }
+  ]
+}
